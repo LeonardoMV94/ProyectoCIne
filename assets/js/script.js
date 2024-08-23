@@ -1,5 +1,6 @@
 const inputText = document.querySelector('#username')
 const labelText = document.querySelector('#basic-addon1')
+const carteleraElement = document.querySelector('#cartelera')
 
 if(inputText != null){
     inputText.addEventListener('keyup', (event) => {
@@ -11,18 +12,37 @@ if(inputText != null){
     })
 }
 
-$(document).ready(function () {
+const cartelera = [
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+    {  nombre: "Wolverine", imagenUrl: "url", descripcion: ""},
+]
 
-    $('#formulario').mouseover(function(){
-        $("#formulario").css("background-color", "blue");
-    });
-    $('#formulario').mouseout(function(){
-        $("#formulario").css("background-color", "red");
-});
+const llenarDatos = (pelicula) => {
+    const template = `
+     <div class="card ">
+          <img
+            src="${pelicula.imagenUrl}"
+            class="card-img-top img-fluid w-150 h-300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${pelicula.nombre}</h5>
+            <p class="card-text">${pelicula.descripcion}
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Ultima funcion</small>
+          </div>
+        </div>
+    `
+    return template
+}
 
-$('#btnEnviar').click(function(){
-    alert("Formulario enviado correctamente");
-});
-
-});
-
+cartelera.map((pelicula) => {
+    carteleraElement.innerHTML += llenarDatos(pelicula)
+})
