@@ -1,5 +1,19 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(207, 94%, 26%) !important;
+    color: white;
+    height: 100%;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
 .container-fluid {
-    background-color: yellow;
+    background-color: hsl(207, 100%, 50%);
 }
 
 .card {
@@ -18,8 +32,9 @@
 /*  */
 
 .formulario {
-    background-color: red;
+    background-color: rgb(101, 162, 226);
 }
-.navbar{
-    padding-top: 0 !important;
+
+.navbar {
+    padding: 0 0 0 0 !important;
 }
