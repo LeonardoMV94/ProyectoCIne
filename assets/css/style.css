@@ -18,11 +18,12 @@ body {
 
 .card {
     overflow: hidden;
-    margin: 30px;
+    /* margin: 30px; */
 }
 
 .card img {
     transition: transform 0.3s ease-in-out;
+   
 }
 
 .card:hover img {
