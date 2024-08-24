@@ -20,4 +20,4 @@ restablece el color cuando el mouse salga;
 
 - :white_check_mark: Aplica un efecto de zoom a las imágenes cuando el mouse pase sobre ellas y haz que vuelvan a su tamaño original
 cuando el mouse salga.
-
+ -
