@@ -39,3 +39,21 @@ body {
 .navbar {
     padding: 0 0 0 0 !important;
 }
+
+h1 {
+    font-style: italic;
+    color: rgb(248, 166, 14); 
+}
+
+p {
+    font-size: 18px; 
+    color: rgb(8, 159, 247);
+}
+
+.navbar-brand:hover {
+    color: rgb(248, 166, 14) !important;
+}
+
+.nav-link:hover {
+    color: rgb(248, 166, 14) !important;
+}
