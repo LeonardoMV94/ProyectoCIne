@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("#formulario").css("background-color", "rgb(101, 162, 226)");
   });
 
-  $("#btnEnviar").click(function () {
-    alert("Formulario enviado correctamente");
-  });
+  // $("#btnEnviar").click(function () {
+  //   alert("Formulario enviado correctamente");
+  // });
 });
